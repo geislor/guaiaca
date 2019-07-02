@@ -2,7 +2,8 @@ from setuptools import setup
 
 
 setup(name='guaiaca',
-      version='0.1',
+      version_format='{tag}.dev{commitcount}+{gitsha}',
+      setup_requires=['setuptools-git-version'],
       description='Simple integration with AWS S3',
       url='https://github.com/geislor/guaiaca',
       author='Geislor Crestani',
