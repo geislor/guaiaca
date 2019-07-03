@@ -10,4 +10,7 @@ setup(name='guaiaca',
       author_email='geislor@gmail.com',
       license='MIT',
       packages=['guaiaca'],
-      zip_safe=False)
+      zip_safe=False,
+      entry_points={
+            "console_scripts": ['bootstrap = bootstrap.bootstrap:main']
+      })
